@@ -26,11 +26,13 @@
     <br>
     <br>
     <label>Your email: </label>
-    <input type="text" placeholder="Email" />
+    <input type="email" placeholder="Email" 
+      pattern=".+@gmail\.com" size="30" required/>
     <br>
     <br>
     <label>Your number: </label>
-    <input type="text" placeholder="Number" />
+    <input type="tel" placeholder="Number"
+      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required/>
     <br>
     <br>
     <label>Desired background color: </label>
