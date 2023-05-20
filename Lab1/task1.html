@@ -8,47 +8,43 @@
 </head>
 <body>
   <form>
-    <h1>Adding teacher</h1>
-    <div>
+    <header>
+      <h1>Adding teacher</h1>
+    </header>
+    <section>
       <label for="name">Full name: </label>
       <input type="text" id="name" placeholder="Name" />
-    </div>
+    </section>
     <br>
-    <br>
-    <div>
+    <section>
       <label for="sex">Your gender: </label>
       Male <input  type="radio" name="sex" value="male" checked>
       Female <input type="radio" name="sex" value="female">
-    </div>
+    </section>
     <br>
-    <br>
-    <div>
+    <section>
       <label for="date">Date of birth: </label>
       <input type="date" id="date" value="2023-05-23" min="1950-01-01" max="2023-05-23" />
-    </div>
+    </section>
     <br>
-    <br>
-    <div>
+    <section>
       <label for="user-email">Your email: </label>
       <input type="email" id="user-email" placeholder="Email" 
       pattern=".+@gmail\.com" size="30" required/>
-    </div>
+    </section>
     <br>
-    <br>
-    <div>
+    <section>
       <label for="mobile-phone">Your number: </label>
       <input type="tel" id="mobile-phone" placeholder="Number"
         pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required/>
-    </div>
+    </section>
     <br>
-    <br>
-    <div>
+    <section>
       <label for="favorite-color">Desired background color: </label>
       <input type="color" id="favorite-color"  value="#ff0000">
-    </div>
+    </section>
     <br>
-    <br>
-    <div>
+    <section>
       <label for="user-country">Your country: </label>
       <!-- Europe -->
       <select name="Country" id="user-country">
@@ -105,10 +101,9 @@
         <option value="UA">Ukraine</option>
         <option value="GB">United Kingdom</option>
       </select>
-    </div>
+    </section>
     <br>
-    <br>
-    <div>
+    <section>
       <label for="user-city">Your city: </label>
           <!-- Kyiv Oblast-->
       <select name="city" id="user-city">
@@ -203,15 +198,13 @@
         <option value="Z·hurivs’kyy Rayon">Z·hurivs’kyy Rayon</option>
         <option value="Zgurovka">Zgurovka</option>
       </select>
-    </div>
+    </section>
     <br>
-    <br>
-    <div>
+    <section>
       <label for="textAreaExample">Comment: </label>
       <br>
       <textarea id="textAreaExample" rows="4" placeholder="Message"></textarea>
-    </div>
-    <br>
+    </section>
     <br>
     <button>Submit</button>
   </form>
