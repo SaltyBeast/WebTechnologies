@@ -9,191 +9,208 @@
 <body>
   <form>
     <h1>Adding teacher</h1>
-    <label>Full name: </label>
-    <input type="text" placeholder="Name" />
+    <div>
+      <label for="name">Full name: </label>
+      <input type="text" id="name" placeholder="Name" />
+    </div>
     <br>
     <br>
-    <label>Your gender: </label>
-    Male <input  type="radio" name="sex" value="male" checked>
-    Female <input type="radio" name="sex" value="female">
+    <div>
+      <label for="sex">Your gender: </label>
+      Male <input  type="radio" name="sex" value="male" checked>
+      Female <input type="radio" name="sex" value="female">
+    </div>
     <br>
     <br>
-    <label>Date of birth: </label>
-    <input type="date" value="2023-05-23" min="1950-01-01" max="2023-05-23" />
+    <div>
+      <label for="date">Date of birth: </label>
+      <input type="date" id="date" value="2023-05-23" min="1950-01-01" max="2023-05-23" />
+    </div>
     <br>
     <br>
-    <label>Your email: </label>
-    <input type="email" placeholder="Email" 
+    <div>
+      <label for="user-email">Your email: </label>
+      <input type="email" id="user-email" placeholder="Email" 
       pattern=".+@gmail\.com" size="30" required/>
+    </div>
     <br>
     <br>
-    <label>Your number: </label>
-    <input type="tel" placeholder="Number"
-      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required/>
+    <div>
+      <label for="mobile-phone">Your number: </label>
+      <input type="tel" id="mobile-phone" placeholder="Number"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required/>
+    </div>
     <br>
     <br>
-    <label>Desired background color: </label>
-    <input type="color"  value="#ff0000">
+    <div>
+      <label for="favorite-color">Desired background color: </label>
+      <input type="color" id="favorite-color"  value="#ff0000">
+    </div>
     <br>
     <br>
-    <label>Your country: </label>
-    <!-- Europe -->
-    <select name="Country">
-      <option value="">Select Country</option>
-      <option value="AX">Aland Islands</option>
-      <option value="AL">Albania</option>
-      <option value="AD">Andorra</option>
-      <option value="AT">Austria</option>
-      <option value="BY">Belarus</option>
-      <option value="BE">Belgium</option>
-      <option value="BA">Bosnia and Herzegovina</option>
-      <option value="BG">Bulgaria</option>
-      <option value="HR">Croatia</option>
-      <option value="CZ">Czech Republic</option>
-      <option value="DK">Denmark</option>
-      <option value="EE">Estonia</option>
-      <option value="FO">Faroe Islands</option>
-      <option value="FI">Finland</option>
-      <option value="FR">France</option>
-      <option value="DE">Germany</option>
-      <option value="GI">Gibraltar</option>
-      <option value="GR">Greece</option>
-      <option value="GG">Guernsey</option>
-      <option value="VA">Holy See (Vatican City State)</option>
-      <option value="HU">Hungary</option>
-      <option value="IS">Iceland</option>
-      <option value="IE">Ireland</option>
-      <option value="IM">Isle of Man</option>
-      <option value="IT">Italy</option>
-      <option value="JE">Jersey</option>
-      <option value="XK">Kosovo</option>
-      <option value="LV">Latvia</option>
-      <option value="LI">Liechtenstein</option>
-      <option value="LT">Lithuania</option>
-      <option value="LU">Luxembourg</option>
-      <option value="MK">Macedonia, the Former Yugoslav Republic of</option>
-      <option value="MT">Malta</option>
-      <option value="MD">Moldova, Republic of</option>
-      <option value="MC">Monaco</option>
-      <option value="ME">Montenegro</option>
-      <option value="NL">Netherlands</option>
-      <option value="NO">Norway</option>
-      <option value="PL">Poland</option>
-      <option value="PT">Portugal</option>
-      <option value="RO">Romania</option>
-      <option value="SM">San Marino</option>
-      <option value="RS">Serbia</option>
-      <option value="CS">Serbia and Montenegro</option>
-      <option value="SK">Slovakia</option>
-      <option value="SI">Slovenia</option>
-      <option value="ES">Spain</option>
-      <option value="SJ">Svalbard and Jan Mayen</option>
-      <option value="SE">Sweden</option>
-      <option value="CH">Switzerland</option>
-      <option value="UA">Ukraine</option>
-      <option value="GB">United Kingdom</option>
-    </select>
+    <div>
+      <label for="user-country">Your country: </label>
+      <!-- Europe -->
+      <select name="Country" id="user-country">
+        <option value="">Select Country</option>
+        <option value="AX">Aland Islands</option>
+        <option value="AL">Albania</option>
+        <option value="AD">Andorra</option>
+        <option value="AT">Austria</option>
+        <option value="BE">Belgium</option>
+        <option value="BA">Bosnia and Herzegovina</option>
+        <option value="BG">Bulgaria</option>
+        <option value="HR">Croatia</option>
+        <option value="CZ">Czech Republic</option>
+        <option value="DK">Denmark</option>
+        <option value="EE">Estonia</option>
+        <option value="FO">Faroe Islands</option>
+        <option value="FI">Finland</option>
+        <option value="FR">France</option>
+        <option value="DE">Germany</option>
+        <option value="GI">Gibraltar</option>
+        <option value="GR">Greece</option>
+        <option value="GG">Guernsey</option>
+        <option value="VA">Holy See (Vatican City State)</option>
+        <option value="HU">Hungary</option>
+        <option value="IS">Iceland</option>
+        <option value="IE">Ireland</option>
+        <option value="IM">Isle of Man</option>
+        <option value="IT">Italy</option>
+        <option value="JE">Jersey</option>
+        <option value="XK">Kosovo</option>
+        <option value="LV">Latvia</option>
+        <option value="LI">Liechtenstein</option>
+        <option value="LT">Lithuania</option>
+        <option value="LU">Luxembourg</option>
+        <option value="MK">Macedonia, the Former Yugoslav Republic of</option>
+        <option value="MT">Malta</option>
+        <option value="MD">Moldova, Republic of</option>
+        <option value="MC">Monaco</option>
+        <option value="ME">Montenegro</option>
+        <option value="NL">Netherlands</option>
+        <option value="NO">Norway</option>
+        <option value="PL">Poland</option>
+        <option value="PT">Portugal</option>
+        <option value="RO">Romania</option>
+        <option value="SM">San Marino</option>
+        <option value="RS">Serbia</option>
+        <option value="CS">Serbia and Montenegro</option>
+        <option value="SK">Slovakia</option>
+        <option value="SI">Slovenia</option>
+        <option value="ES">Spain</option>
+        <option value="SJ">Svalbard and Jan Mayen</option>
+        <option value="SE">Sweden</option>
+        <option value="CH">Switzerland</option>
+        <option value="UA">Ukraine</option>
+        <option value="GB">United Kingdom</option>
+      </select>
+    </div>
     <br>
     <br>
-    <label>Your city: </label>
-        <!-- Kyiv Oblast-->
-    <select name="city">
-      <option value="">Select City</option>
-      <option value="Baryshivka">Baryshivka</option>
-      <option value="Baryshivs’kyy Rayon">Baryshivs’kyy Rayon</option>
-      <option value="Bila Tserkva">Bila Tserkva</option>
-      <option value="Bila Tserkva Raion">Bila Tserkva Raion</option>
-      <option value="Bohuslav">Bohuslav</option>
-      <option value="Borispol’skiy Rayon">Borispol’skiy Rayon</option>
-      <option value="Borodianka">Borodianka</option>
-      <option value="Borodyans’kyy Rayon">Borodyans’kyy Rayon</option>
-      <option value="Borova">Borova</option>
-      <option value="Boryspil’">Boryspil’</option>
-      <option value="Boyarka">Boyarka</option>
-      <option value="Brovary">Brovary</option>
-      <option value="Brovary Raion">Brovary Raion</option>
-      <option value="Bucha">Bucha</option>
-      <option value="Chabany">Chabany</option>
-      <option value="Chernyakhivka">Chernyakhivka</option>
-      <option value="Dymer">Dymer</option>
-      <option value="Fastiv">Fastiv</option>
-      <option value="Fastiv Raion">Fastiv Raion</option>
-      <option value="Hlevakha">Hlevakha</option>
-      <option value="Hnidyn">Hnidyn</option>
-      <option value="Horenka">Horenka</option>
-      <option value="Hostomel">Hostomel</option>
-      <option value="Irpin">Irpin</option>
-      <option value="Irpins’ka Mis’krada">Irpins’ka Mis’krada</option>
-      <option value="Ivankiv">Ivankiv</option>
-      <option value="Ivankiv Raion">Ivankiv Raion</option>
-      <option value="Kaharlyk">Kaharlyk</option>
-      <option value="Kaharlyk Raion">Kaharlyk Raion</option>
-      <option value="Kalynove">Kalynove</option>
-      <option value="Karapyshi">Karapyshi</option>
-      <option value="Katyuzhanka">Katyuzhanka</option>
-      <option value="Khotiv">Khotiv</option>
-      <option value="Kirove">Kirove</option>
-      <option value="Klavdiyevo-Tarasove">Klavdiyevo-Tarasove</option>
-      <option value="Knyazhichi">Knyazhichi</option>
-      <option value="Kodra">Kodra</option>
-      <option value="Korniyivka">Korniyivka</option>
-      <option value="Kozhanka">Kozhanka</option>
-      <option value="Krasyatychi">Krasyatychi</option>
-      <option value="Kriukivschina">Kriukivschina</option>
-      <option value="Kryva Hora">Kryva Hora</option>
-      <option value="Kyyevo-Svyatoshyns’kyy Rayon">Kyyevo-Svyatoshyns’kyy Rayon</option>
-      <option value="Liutizh">Liutizh</option>
-      <option value="Makariv">Makariv</option>
-      <option value="Makariv Raion">Makariv Raion</option>
-      <option value="Mirovka">Mirovka</option>
-      <option value="Motovylivka">Motovylivka</option>
-      <option value="Myronivka">Myronivka</option>
-      <option value="Novi Petrivtsi">Novi Petrivtsi</option>
-      <option value="Obukhiv">Obukhiv</option>
-      <option value="Obukhiv Raion">Obukhiv Raion</option>
-      <option value="Obukhivs’ka Mis’krada">Obukhivs’ka Mis’krada</option>
-      <option value="Pereiaslav-Khmelnytskyi">Pereiaslav-Khmelnytskyi</option>
-      <option value="Pereiaslav-Khmelnytskyi Raion">Pereiaslav-Khmelnytskyi Raion</option>
-      <option value="Piskivka">Piskivka</option>
-      <option value="Pohreby">Pohreby</option>
-      <option value="Pukhivka">Pukhivka</option>
-      <option value="Rokytne">Rokytne</option>
-      <option value="Rokytne Raion">Rokytne Raion</option>
-      <option value="Roskoshnyy">Roskoshnyy</option>
-      <option value="Rzhyshchiv">Rzhyshchiv</option>
-      <option value="Semypolky">Semypolky</option>
-      <option value="Skvyra">Skvyra</option>
-      <option value="Skvyrs’kyy Rayon">Skvyrs’kyy Rayon</option>
-      <option value="Slavutych">Slavutych</option>
-      <option value="Sofiyivska Borschagivka">Sofiyivska Borschagivka</option>
-      <option value="Stavyshche">Stavyshche</option>
-      <option value="Stayki">Stayki</option>
-      <option value="Tarashcha">Tarashcha</option>
-      <option value="Tetiiv">Tetiiv</option>
-      <option value="Trebukhiv">Trebukhiv</option>
-      <option value="Trypillia">Trypillia</option>
-      <option value="Tsybli">Tsybli</option>
-      <option value="Ukrainka">Ukrainka</option>
-      <option value="Uzyn">Uzyn</option>
-      <option value="Vasylkiv">Vasylkiv</option>
-      <option value="Vasylkiv Raion">Vasylkiv Raion</option>
-      <option value="Velyka Dymerka">Velyka Dymerka</option>
-      <option value="Volodarka">Volodarka</option>
-      <option value="Voronkov">Voronkov</option>
-      <option value="Vorzel’">Vorzel’</option>
-      <option value="Vyshgorodskiy Rayon">Vyshgorodskiy Rayon</option>
-      <option value="Vyshhorod">Vyshhorod</option>
-      <option value="Vyshneve">Vyshneve</option>
-      <option value="Yahotyn">Yahotyn</option>
-      <option value="Yahotyns’kyy Rayon">Yahotyns’kyy Rayon</option>
-      <option value="Z·hurivs’kyy Rayon">Z·hurivs’kyy Rayon</option>
-      <option value="Zgurovka">Zgurovka</option>
-    </select>
+    <div>
+      <label for="user-city">Your city: </label>
+          <!-- Kyiv Oblast-->
+      <select name="city" id="user-city">
+        <option value="">Select City</option>
+        <option value="Baryshivka">Baryshivka</option>
+        <option value="Baryshivs’kyy Rayon">Baryshivs’kyy Rayon</option>
+        <option value="Bila Tserkva">Bila Tserkva</option>
+        <option value="Bila Tserkva Raion">Bila Tserkva Raion</option>
+        <option value="Bohuslav">Bohuslav</option>
+        <option value="Borispol’skiy Rayon">Borispol’skiy Rayon</option>
+        <option value="Borodianka">Borodianka</option>
+        <option value="Borodyans’kyy Rayon">Borodyans’kyy Rayon</option>
+        <option value="Borova">Borova</option>
+        <option value="Boryspil’">Boryspil’</option>
+        <option value="Boyarka">Boyarka</option>
+        <option value="Brovary">Brovary</option>
+        <option value="Brovary Raion">Brovary Raion</option>
+        <option value="Bucha">Bucha</option>
+        <option value="Chabany">Chabany</option>
+        <option value="Chernyakhivka">Chernyakhivka</option>
+        <option value="Dymer">Dymer</option>
+        <option value="Fastiv">Fastiv</option>
+        <option value="Fastiv Raion">Fastiv Raion</option>
+        <option value="Hlevakha">Hlevakha</option>
+        <option value="Hnidyn">Hnidyn</option>
+        <option value="Horenka">Horenka</option>
+        <option value="Hostomel">Hostomel</option>
+        <option value="Irpin">Irpin</option>
+        <option value="Irpins’ka Mis’krada">Irpins’ka Mis’krada</option>
+        <option value="Ivankiv">Ivankiv</option>
+        <option value="Ivankiv Raion">Ivankiv Raion</option>
+        <option value="Kaharlyk">Kaharlyk</option>
+        <option value="Kaharlyk Raion">Kaharlyk Raion</option>
+        <option value="Kalynove">Kalynove</option>
+        <option value="Karapyshi">Karapyshi</option>
+        <option value="Katyuzhanka">Katyuzhanka</option>
+        <option value="Khotiv">Khotiv</option>
+        <option value="Kirove">Kirove</option>
+        <option value="Klavdiyevo-Tarasove">Klavdiyevo-Tarasove</option>
+        <option value="Knyazhichi">Knyazhichi</option>
+        <option value="Kodra">Kodra</option>
+        <option value="Korniyivka">Korniyivka</option>
+        <option value="Kozhanka">Kozhanka</option>
+        <option value="Krasyatychi">Krasyatychi</option>
+        <option value="Kriukivschina">Kriukivschina</option>
+        <option value="Kryva Hora">Kryva Hora</option>
+        <option value="Kyyevo-Svyatoshyns’kyy Rayon">Kyyevo-Svyatoshyns’kyy Rayon</option>
+        <option value="Liutizh">Liutizh</option>
+        <option value="Makariv">Makariv</option>
+        <option value="Makariv Raion">Makariv Raion</option>
+        <option value="Mirovka">Mirovka</option>
+        <option value="Motovylivka">Motovylivka</option>
+        <option value="Myronivka">Myronivka</option>
+        <option value="Novi Petrivtsi">Novi Petrivtsi</option>
+        <option value="Obukhiv">Obukhiv</option>
+        <option value="Obukhiv Raion">Obukhiv Raion</option>
+        <option value="Obukhivs’ka Mis’krada">Obukhivs’ka Mis’krada</option>
+        <option value="Pereiaslav-Khmelnytskyi">Pereiaslav-Khmelnytskyi</option>
+        <option value="Pereiaslav-Khmelnytskyi Raion">Pereiaslav-Khmelnytskyi Raion</option>
+        <option value="Piskivka">Piskivka</option>
+        <option value="Pohreby">Pohreby</option>
+        <option value="Pukhivka">Pukhivka</option>
+        <option value="Rokytne">Rokytne</option>
+        <option value="Rokytne Raion">Rokytne Raion</option>
+        <option value="Roskoshnyy">Roskoshnyy</option>
+        <option value="Rzhyshchiv">Rzhyshchiv</option>
+        <option value="Semypolky">Semypolky</option>
+        <option value="Skvyra">Skvyra</option>
+        <option value="Skvyrs’kyy Rayon">Skvyrs’kyy Rayon</option>
+        <option value="Slavutych">Slavutych</option>
+        <option value="Sofiyivska Borschagivka">Sofiyivska Borschagivka</option>
+        <option value="Stavyshche">Stavyshche</option>
+        <option value="Stayki">Stayki</option>
+        <option value="Tarashcha">Tarashcha</option>
+        <option value="Tetiiv">Tetiiv</option>
+        <option value="Trebukhiv">Trebukhiv</option>
+        <option value="Trypillia">Trypillia</option>
+        <option value="Tsybli">Tsybli</option>
+        <option value="Ukrainka">Ukrainka</option>
+        <option value="Uzyn">Uzyn</option>
+        <option value="Vasylkiv">Vasylkiv</option>
+        <option value="Vasylkiv Raion">Vasylkiv Raion</option>
+        <option value="Velyka Dymerka">Velyka Dymerka</option>
+        <option value="Volodarka">Volodarka</option>
+        <option value="Voronkov">Voronkov</option>
+        <option value="Vorzel’">Vorzel’</option>
+        <option value="Vyshgorodskiy Rayon">Vyshgorodskiy Rayon</option>
+        <option value="Vyshhorod">Vyshhorod</option>
+        <option value="Vyshneve">Vyshneve</option>
+        <option value="Yahotyn">Yahotyn</option>
+        <option value="Yahotyns’kyy Rayon">Yahotyns’kyy Rayon</option>
+        <option value="Z·hurivs’kyy Rayon">Z·hurivs’kyy Rayon</option>
+        <option value="Zgurovka">Zgurovka</option>
+      </select>
+    </div>
     <br>
     <br>
-    <label>Comment: </label>
-    <br>
-    <textarea id="textAreaExample" rows="4" placeholder="Message"></textarea>
+    <div>
+      <label for="textAreaExample">Comment: </label>
+      <br>
+      <textarea id="textAreaExample" rows="4" placeholder="Message"></textarea>
+    </div>
     <br>
     <br>
     <button>Submit</button>
